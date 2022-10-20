@@ -1,0 +1,17 @@
+name: "Master Job for Nested Jobs Example"
+
+on:
+  push:
+    branches:
+      nested-workflows
+
+jobs:
+  smoke_job:
+    name: Run several steps in sequence
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Step 1
+        run: echo Step 1
+      - name: Step 2
+        run: echo Step 2
