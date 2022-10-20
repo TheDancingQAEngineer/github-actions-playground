@@ -3,7 +3,8 @@ name: "Master Job for Nested Jobs Example"
 on:
   push:
     branches:
-      nested-workflows
+      - nested-workflows
+      - nested-workflows-WIP
 
 jobs:
   master_job:
