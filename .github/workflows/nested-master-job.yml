@@ -6,12 +6,12 @@ on:
       nested-workflows
 
 jobs:
-  smoke_job:
-    name: Run several steps in sequence
+  master_job:
+    name: Run master job
     runs-on: ubuntu-latest
 
     steps:
-      - name: Step 1
-        run: echo Step 1
-      - name: Step 2
-        run: echo Step 2
+      - name: Master Step 1
+        run: echo Master Step 1
+      - name: Master Step 2
+        run: echo Master Step 2

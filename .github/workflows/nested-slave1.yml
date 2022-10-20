@@ -1,0 +1,14 @@
+name: "Slave 1 Job for Nested Jobs Example"
+
+on:
+  workflow_run:
+    workflows: ["Master Job for Nested Jobs Example"]
+
+jobs:
+  master_job:
+    name: Run master job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Slave Step 1
+        run: echo Slave Step 1
